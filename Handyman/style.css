@@ -1,0 +1,11 @@
+.email-background{
+    background-color: pink;
+}
+.email-container{
+    max-width : 500px;  
+    background-color: pink;
+}
+
+.pre-header{
+    @extend .email-container;
+}

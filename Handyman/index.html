@@ -1,0 +1,211 @@
+ <html>
+    <head>
+        <title> Invoice template</title>
+    </head>
+     <style>
+      form{
+       margin-left: 5px;
+       margin-right: 5px;
+      }
+         .email-background{
+             background-color: #eee;
+             padding: 10px;
+         }
+         .email-container{
+             max-width : 500px;
+             background-color: white;
+             font-family: sans-serif;
+             margin: 0 auto;
+             overflow: hidden;
+             border-radius: 5px;
+         }
+
+         .pre-header{
+             @extend .email-container;
+             background-color: #eee;
+            color: #eee;
+            font-size: 5px
+         }
+
+         p {
+             margin: 20px
+             font-size : 18px;
+             font-weight: 300px;
+             text-align: center;
+             color: #666;
+             line-height: 1.5px;
+         }
+
+         .cta{
+             text-align: center;
+             margin: 20px;
+
+         }
+
+        .footer-junk a{
+             color:#04bcdc;
+         }
+
+        .cta a{
+             text-decoration: none;
+             display: inline-block;
+             background-color: #0066FF;
+             color: white;
+             padding: 10px 20px;
+             border-radius: 5px;
+         }
+
+         h1{
+             text-align: center;
+         }
+
+         .email-title h3{
+            display: inline-block;
+
+       }
+         .email-cost{
+             float: left;
+             margin-left: 5px;
+         }
+         .email-cost2{
+             float: right;
+             margin-right: 27%;
+         }
+         .email-title p{
+            display: inline-block;
+
+       }
+         .email-material{
+             float: left;
+         }
+         .email-price{
+             float: right;
+         }
+          .total h3{
+            display: inline-block;
+
+       }
+         .total-title{
+             float: left;
+         }
+         .total-price{
+             float: right;
+         }
+         #total-number{
+             float: inherit;
+         }
+
+         .email-intro{
+             font-size: 12px;
+             text-align: center;
+             text-align: center;
+             color: #747474;
+         }
+         .footer-junk{
+             @extend email-container;
+             background: none;
+             padding: 20px;
+             font-size: 12px;
+             text-align: center;
+         }
+
+         .logo{
+           margin-left: 35%;
+           margin-top: 4%;
+         }
+     </style>
+    <body>
+        <div class="email-background">
+            <div class="pre-header">
+                Thank You For Choosing Us! Here is your Reciept For The Work
+            </div>
+            <div class="email-container">
+              <a href="#"><img src="http://placehold.it/140x100" alt="Logo" class="logo" /></a>
+                <h1>Invoice template</h1>
+                <div class="email-intro">
+                    Thank you for choosing us! We hope to work with you again in the future
+                </div>
+                <div class="email-title">
+                    <h3 class="email-cost">Materials</h3>
+                    <h3 class="email-cost2">Cost</h3>
+                </div>
+                <div style="clear: both;"></div>
+                <form action="action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)+parseInt(c.value)+parseInt(d.value)+parseInt(e.value)+parseInt(f.value)+parseInt(g.value)+parseInt(h.value)+parseInt(i.value)+parseInt(j.value)">
+<!--Material 1 -->
+                  <input type="text" class="email-material" placeholder="Enter Material Name">
+<!--Cost 1 -->
+                  <input type="number" class="email-price" id="a" name="a" value="0">
+                  <br/>
+                  <br/>
+<!--Material 2 -->
+                  <input type="text" class="email-material" placeholder="Enter Material Name">
+<!--Cost 2-->
+                  <input type="number" class="email-price" id="b" name="b" value="0">
+                  <br/>
+                  <br/>
+ <!-- Material 3 -->
+                  <input type="text" class="email-material" placeholder="Enter Material Name">
+<!--Cost 3 -->
+                  <input type="number" class="email-price" id="c" name="c" value="0">
+                  <br/>
+                  <br/>
+<!-- Material 4 -->
+                  <input type="text" class="email-material" placeholder="Enter Material Name">
+<!--Cost 4 -->
+                  <input type="number" class="email-price" id="d" name="d" value="0">
+                  <br/>
+                  <br/>
+<!-- Material 5 -->
+                  <input type="text" class="email-material" placeholder="Enter Material Name">
+<!--Cost 5-->
+                  <input type="number" class="email-price" id="e" name="e" value="0">
+                  <br/>
+                  <br/>
+<!-- Material 6 -->
+                  <input type="text" class="email-material" placeholder="Enter Material Name">
+<!--Cost 6 -->
+                  <input type="number" class="email-price" id="f" name="f" value="0">
+                  <br/>
+                  <br/>
+<!-- Material 7 -->
+                  <input type="text" class="email-material" placeholder="Enter Material Name">
+<!--Cost 7 -->
+                    <input type="number" class="email-price" id="g" name="g" value="0">
+                  <br/>
+                  <br/>
+<!-- Material 8 -->
+                  <input type="text" class="email-material" placeholder="Enter Material Name">
+<!--Cost 8 -->
+                  <input type="number" class="email-price" id="h" name="h" value="0">
+                  <br/>
+                  <br/>
+<!-- Material 9 -->
+                  <input type="text" class="email-material" placeholder="Enter Material Name">
+<!--Cost 9 -->
+                  <input type="number" class="email-price" id="i" name="i" value="0">
+                  <br/>
+                  <br/>
+<!-- Material 10 -->
+                  <input type="text" class="email-material" placeholder="Enter Material Name">
+<!--Cost 10 -->
+                  <input type="number" class="email-price" id="j" name="j" value="0">
+                  <br/>
+                  <br/>
+                  <div class="total">
+                      <h3 class="total-title">Total:</h3>
+                      <h3 class="total-price">&pound;<output name="x" for="a b"></output></h3>
+                      <br/>
+                      <br/>
+                  </div>
+
+                  <div style="clear: both;"></div>
+                </form>
+                <div class="cta">
+                   <a href="#">Click here to pay</a>
+                </div>
+            </div>
+            <div class="footer-junk"> Yuri Alves | <a href="Public Profilehttps://www.linkedin.com/in/yurinunesalves">LinkedIn</a> | <a href="https://chuckykillr.github.io/index.html">Website</a>
+            </div>
+        </div>
+    </body>
+</html>
